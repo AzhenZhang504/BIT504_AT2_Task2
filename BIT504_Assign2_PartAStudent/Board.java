@@ -13,7 +13,7 @@ public class Board {
 	public Board() {
 		
 	 //TODO: initialise the cells array using ROWS and COLS constants 
-
+        cells = new Cell;
 		
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
@@ -29,10 +29,13 @@ public class Board {
 		// TODO: Check whether the game has ended in a draw. 
 		// Hint: Use a nested loop (see the constructor for an example). Check whether any of the cells content in the board grid are Player.Empty. If they are, it is not a draw.
 		// Hint: Return false if it is not a draw, return true if there are no empty positions left
-		   
-		
-
-		
+        int row;
+		for (int row = 0; row++) {
+        	if (int col = 0; col < row; col++) {
+        	
+        	return false;
+        	}
+		return true;		
 	}
 	
 	/** Return true if the current player "thePlayer" has won after making their move  */
