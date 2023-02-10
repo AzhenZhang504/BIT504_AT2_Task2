@@ -57,10 +57,10 @@ public class GameMain extends JPanel implements MouseListener{
 		
 		
 		// TODO: Create a new instance of the game "Board"class. HINT check the variables above for the correct name
-
+        Board board = new Board();
 		
 		//TODO: call the method to initialise the game board
-
+        this.board = board;
 	}
 	
 	public static void main(String[] args) {
@@ -71,11 +71,12 @@ public class GameMain extends JPanel implements MouseListener{
 				JFrame frame = new JFrame(TITLE);
 				
 				//TODO: create the new GameMain panel and add it to the frame
-						
+				GameMain gameMain = new GameMain();
+				frame.add(gameMain);
 				
 				
 				//TODO: set the default close operation of the frame to exit_on_close
-		            
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
 				
 				frame.pack();             
 				frame.setLocationRelativeTo(null);
@@ -88,6 +89,7 @@ public class GameMain extends JPanel implements MouseListener{
 		//fill background and set colour to white
 		super.paintComponent(g);
 		setBackground(Color.WHITE);
+		
 		//ask the game board to paint itself
 		board.paint(g);
 		
@@ -97,12 +99,12 @@ public class GameMain extends JPanel implements MouseListener{
 			if (currentPlayer == Player.Cross) {   
 			
 				//TODO: use the status bar to display the message "X"'s Turn
-
+                statusBar.setText("X");
 				
 			} else {    
 				
 				//TODO: use the status bar to display the message "O"'s Turn
-
+                statusBar.setText("0");
 				
 			}       
 			} else if (currentState == GameState.Draw) {          
