@@ -14,7 +14,7 @@ public class Board {
 		
 	 //TODO: initialise the cells array using ROWS and COLS constants 
        
-		Cell[][] cells = new Cell[GameMain.ROWS][GameMain.COLS];
+		cells = new Cell[GameMain.ROWS][GameMain.COLS];
 		for (int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {
 				cells[row][col] = new Cell(row, col);
