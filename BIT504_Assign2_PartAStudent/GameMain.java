@@ -41,6 +41,8 @@ public class GameMain extends JPanel implements MouseListener{
 		
 		// TODO: This JPanel fires a MouseEvent on MouseClicked so add required event listener to 'this'.          
 	    
+		
+		
 	    
 		// Setup the status bar (JLabel) to display status message       
 		statusBar = new JLabel("         ");       
@@ -149,6 +151,11 @@ public class GameMain extends JPanel implements MouseListener{
 					
 				// TODO: set the currentstate to the draw gamestate
 
+					
+					
+					
+					
+					
 			}
 			//otherwise no change to current state of playing
 		}
